@@ -1,0 +1,35 @@
+body{
+    background-color: #457a7e;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.catagoriën {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20%;
+
+    
+}
+.upperbody_foto {
+    width: 70%;
+    border-radius: 5%;
+}
+
+.lowerbody_foto {
+    width: 70%;
+    border-radius: 5%;
+}
+
+.sixpack_foto {
+    width: 70%;
+    border-radius: 5%;
+}
+.cardio_foto {
+    width: 70%;
+    border-radius: 5%;
+}
+
