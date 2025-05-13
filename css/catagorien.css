@@ -1,35 +1,45 @@
 body{
-    background-color: #457a7e;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
+    background-color: #141e22;
 
 }
 
 .catagoriën {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20%;
-
+    gap: 9%;
+    justify-content: center;
     
 }
-.upperbody_foto {
+
+.catagoriën section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catagoriën img{
     width: 70%;
-    border-radius: 5%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.catagoriën img:hover {
+    transform: scale(1.1);
+    height: 200px;
+    object-fit: cover;
+}
+
+.catagoriën h2 {
+    color: white;
+    margin-top: 2%;
+    text-align: center;
+    
 }
 
 .lowerbody_foto {
-    width: 70%;
-    border-radius: 5%;
+ margin-top: 5%;
 }
 
-.sixpack_foto {
-    width: 70%;
-    border-radius: 5%;
-}
-.cardio_foto {
-    width: 70%;
-    border-radius: 5%;
-}
+
 
