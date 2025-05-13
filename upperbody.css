@@ -1,26 +1,17 @@
-:root {
-  --primary-bg: #0b1f3a;
-  --secondary-bg: #1a2f4f;
-  --accent: #00bcd4;
-  --text-light: #ffffff;
-  --text-muted: #cccccc;
-  --border-color: #2c3e50;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--primary-bg);
-  color: var(--text-light);
+  background-color: #141e22;
+  color: white;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-bg);
+  background-color: #1c2b30;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -28,23 +19,23 @@ body {
 }
 
 .menu a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
-  color: var(--text-light);
+  color: white;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-.menu a:hover,
-.menu a.active {
-  color: var(--accent);
+.menu a.active,
+.menu a:hover {
+  color: #00bcd4;
 }
 
 .user-icon {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
-  border: 2px solid var(--accent);
+  border: 2px solid #00bcd4;
 }
 
 .content {
@@ -55,44 +46,45 @@ body {
 .media {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
 .afbeelding {
-  width: 120px;
-  height: 120px;
-  background-color: var(--border-color);
-  border: 2px solid var(--accent);
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.afbeelding:hover {
+  transform: scale(1.05);
 }
 
 .video {
-  width: 220px;
-  height: 120px;
-  background-color: var(--border-color);
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--accent);
+  width: 320px;
+  height: 200px;
   border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #00bcd4;
+  background-color: #1c2b30;
 }
 
 h1 {
-  color: var(--accent);
+  color: #00bcd4;
   margin-bottom: 10px;
 }
 
 p {
-  color: var(--text-muted);
+  color: #cccccc;
 }
 
 .footer {
-  border-top: 1px dashed var(--accent);
+  border-top: 1px dashed #00bcd4;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
-  background-color: var(--secondary-bg);
+  background-color: #1c2b30;
 }
