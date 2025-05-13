@@ -1,67 +1,99 @@
+/* Algemene reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
+}
+
+html, body {
     width: 100%;
     height: 100%;
-  }
-  
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Banner-container */
 .banner {
     position: relative;
-    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
+/* Video als achtergrond */
 .banner-video {
     position: absolute;
-    top: 60%;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    margin-left: -30%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    z-index: 1;
+    z-index: -1;
 }
 
+/* Logo stijl en positionering - links bovenin */
+.logo {
+    position: absolute;
+
+    left: 5%; /* 5% vanaf de linkerkant van de banner */
+    z-index: 2;
+}
+
+.logo img {
+    width: 150px;  /* Standaard grootte voor het logo */
+    height: auto;  /* Zorgt ervoor dat de hoogte proportioneel schaalt */
+}
+
+/* Tekst en knop onder de video */
 .banner-tekst {
     position: absolute;
-    top: 70%;
+    top: 60%; /* Zet de tekst en knop lager voor een betere zichtbaarheid */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);  /* Centreer de tekst horizontaal */
     z-index: 2;
     text-align: center;
     color: white;
-    
 }
 
-
-                        
-                            
-@import url('https://fonts.googleapis.com/css2?Bebas+Neue&display=swap');
-
+/* Knopstijl */
 .btn {
-    cursor: pointer; border: solid rgb(0, 0, 0); font-family: "Bebas Neue"; font-size: 26px; color: rgb(0, 0, 0); padding: 10px 30px; transition: 310ms; width: 199px; box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px; border-radius: 25px; background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%); font-weight: 100; --hover-width: 199px; --hover-bgc: #000000; --hover-borderc: #000000; --hover-color: #ffffff;
+    cursor: pointer;
+    font-family: 'Bebas Neue';
+    font-size: 26px;  /* Grotere knoptekst voor laptops */
+    color: #000;
+    padding: 10px 30px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #fff 0%, #fff 100%);
+    width: max-content; /* Maak de breedte responsiever */
+    max-width: 200px; /* Max breedte voor de knop */
+    transition: all 0.3s ease-in-out; /* Verfijnde overgang */
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-
-.btn:hover{
-    
-color: rgb(255, 255, 255);
-width: 199px;
-background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-border-color: rgb(0, 0, 0);
-border-width: 2px;
-border-style: solid;
+.btn:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Responsieve aanpassingen voor grotere schermen (laptops en groter) */
+@media (min-width: 1024px) {
+    .banner-video {
+        object-position: center;
+    }
+  
+    .banner-tekst {
+        top: 55%; /* Plaats de tekst en knop verder omhoog voor laptops */
+    }
 
+    .btn {
+        font-size: 24px;  /* Pas de knoptekst aan voor grotere schermen */
+        padding: 14px 28px;  /* Grotere padding voor betere zichtbaarheid */
+    }
 
-
+    /* Verander de grootte van het logo voor grotere schermen */
+    .logo img {
+        width: 200px;  /* Maak het logo groter op grotere schermen */
+    }
+}

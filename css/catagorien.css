@@ -1,45 +1,51 @@
-body{
+body {
     background-color: #141e22;
-
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
 }
 
 .catagoriën {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 9%;
-    justify-content: center;
-    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 5%;
+    height: 100vh;
+    padding: 5%;
+    box-sizing: border-box;
 }
 
 .catagoriën section {
+    background-color: #1c2a30;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding: 2%;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.3);
 }
 
-.catagoriën img{
-    width: 70%;
-    display: block;
-    transition: transform 0.3s ease-in-out;
+.catagoriën section:hover {
+    transform: scale(1.03);
 }
 
-.catagoriën img:hover {
-    transform: scale(1.1);
-    height: 200px;
-    object-fit: cover;
+.catagoriën img {
+    width: 95%;            /* Groter gemaakt */
+    height: auto;
+    max-height: 70%;       /* Meer verticale ruimte */
+    object-fit: contain;
+    margin-bottom: 3%;
+    transition: transform 0.3s ease;
 }
 
 .catagoriën h2 {
     color: white;
-    margin-top: 2%;
+    font-size: 130%;
+    margin: 0;
     text-align: center;
-    
 }
-
-.lowerbody_foto {
- margin-top: 5%;
-}
-
-
-
