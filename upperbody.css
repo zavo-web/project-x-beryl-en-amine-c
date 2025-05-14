@@ -47,12 +47,12 @@ body {
   display: flex;
   gap: 30px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .afbeelding {
-  width: 400px;
+  width: 250px;
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
@@ -63,7 +63,8 @@ body {
 }
 
 .video {
-  width: 400px;
+  width: 600px;
+  height: 340px;
   border-radius: 10px;
   outline: 2px solid #00ffff;
   overflow: hidden;
