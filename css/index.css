@@ -1,28 +1,57 @@
-/* Logo stijl en positionering - links bovenin */
-.logo {
-    position: absolute;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    left: 5%; /* 5% vanaf de linkerkant van de banner */
-    z-index: 2;
+html, body {
+  height: 100%;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Banner styling */
+.banner {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Navbar en logo */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
 }
 
 .logo img {
-    width: 150px;  /* Standaard grootte voor het logo */
-    height: auto;  /* Zorgt ervoor dat de hoogte proportioneel schaalt */
+  height: 60px;
+  
 }
 
-/* Tekst en knop onder de video */
+/* Banner tekst en originele knop */
 .banner-tekst {
-    position: absolute;
-    top: 60%; /* Zet de tekst en knop lager voor een betere zichtbaarheid */
-    left: 50%;
-    transform: translateX(-50%);  /* Centreer de tekst horizontaal */
-    z-index: 2;
-    text-align: center;
-    color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
-/* Knopstijl */
 .btn {
     cursor: pointer;
     font-family: 'Bebas Neue';
@@ -45,23 +74,3 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsieve aanpassingen voor grotere schermen (laptops en groter) */
-@media (min-width: 1024px) {
-    .banner-video {
-        object-position: center;
-    }
-  
-    .banner-tekst {
-        top: 55%; /* Plaats de tekst en knop verder omhoog voor laptops */
-    }
-
-    .btn {
-        font-size: 24px;  /* Pas de knoptekst aan voor grotere schermen */
-        padding: 14px 28px;  /* Grotere padding voor betere zichtbaarheid */
-    }
-
-    /* Verander de grootte van het logo voor grotere schermen */
-    .logo img {
-        width: 200px;  /* Maak het logo groter op grotere schermen */
-    }
-}
