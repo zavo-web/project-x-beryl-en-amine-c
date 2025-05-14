@@ -45,15 +45,14 @@ body {
 
 .media {
   display: flex;
-  justify-content: center;
   gap: 30px;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .afbeelding {
-  width: 200px;
-  height: 200px;
+  width: 400px;
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
@@ -64,13 +63,13 @@ body {
 }
 
 .video {
-  width: 320px;
-  height: 200px;
+  width: 400px;
   border-radius: 10px;
+  outline: 2px solid #00ffff;
   overflow: hidden;
-  border: 2px solid #00bcd4;
   background-color: #1c2b30;
 }
+
 
 h1 {
   color: #00bcd4;
