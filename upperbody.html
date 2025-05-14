@@ -21,13 +21,21 @@
 
     <!-- Hoofdgedeelte -->
     <main class="content">
-      <div class="media">
-        <img src="cardio.png" alt="Afbeelding" class="afbeelding" />
-        <div class="video">Video</div>
-      </div>
-      <h1>Instructie</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </main>
+  <div class="media">
+    <!-- Afbeelding blijft -->
+    <img src="cardio.png" alt="Afbeelding" class="afbeelding" />
+
+    <!-- Vervang de lege <div class="video"> door een echte video -->
+    <video class="video" width="400" controls poster="cardio.png">
+      <source src="cardio.mp4" type="video/mp4">
+      Je browser ondersteunt deze video niet.
+    </video>
+  </div>
+
+  <h1>Instructie</h1>
+  <p>Lorem ipsum dolor sit amet.</p>
+</main>
+
 
     <!-- Footer -->
     <footer class="footer">Footer</footer>
