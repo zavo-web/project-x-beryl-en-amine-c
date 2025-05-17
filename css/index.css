@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ html, body {
   z-index: 1;
 }
 
-/* Navbar en logo */
+
 .navbar {
   position: absolute;
   top: 0;
@@ -43,7 +43,7 @@ html, body {
   
 }
 
-/* Banner tekst en originele knop */
+
 .banner-tekst {
   position: absolute;
   bottom: 50px;
@@ -55,15 +55,15 @@ html, body {
 .btn {
     cursor: pointer;
     font-family: 'Bebas Neue';
-    font-size: 26px;  /* Grotere knoptekst voor laptops */
+    font-size: 26px;  
     color: #000;
     padding: 10px 30px;
     border: 2px solid #000;
     border-radius: 25px;
     background: linear-gradient(90deg, #fff 0%, #fff 100%);
-    width: max-content; /* Maak de breedte responsiever */
-    max-width: 200px; /* Max breedte voor de knop */
-    transition: all 0.3s ease-in-out; /* Verfijnde overgang */
+    width: max-content; 
+    max-width: 200px; 
+    transition: all 0.3s ease-in-out; 
     box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3);
 }
 
