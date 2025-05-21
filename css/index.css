@@ -1,49 +1,75 @@
-/* Reset */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-/* Banner styling */
-.banner {
+  font-family: Arial, sans-serif;
+  background-color: #141e22;
+  color: white;
+  overflow: hidden; /* voorkomt scrollen */
   height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2b30;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 5px 0;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+.user-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #00bcd4;
+  cursor: pointer;
+}
+
+.banner {
+  height: calc(100vh - 100px); /* 100vh minus navbar height (approx 100px) */
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
-}
-
-/* Navbar en logo */
-.navbar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px;
-  z-index: 2;
+  z-index: 1;
 }
 
-.logo img {
-  height: 60px;
-  
-}
-
-/* Banner tekst en originele knop */
 .banner-tekst {
   position: absolute;
   bottom: 50px;
@@ -53,24 +79,22 @@ html, body {
 }
 
 .btn {
-    cursor: pointer;
-    font-family: 'Bebas Neue';
-    font-size: 26px;  /* Grotere knoptekst voor laptops */
-    color: #000;
-    padding: 10px 30px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    background: linear-gradient(90deg, #fff 0%, #fff 100%);
-    width: max-content; /* Maak de breedte responsiever */
-    max-width: 200px; /* Max breedte voor de knop */
-    transition: all 0.3s ease-in-out; /* Verfijnde overgang */
-    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size: 26px;
+  color: #000;
+  padding: 10px 30px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #fff 0%, #fff 100%);
+  max-width: 200px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
-    background: #000;
-    color: #fff;
-    border-color: #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
