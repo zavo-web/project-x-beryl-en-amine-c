@@ -80,16 +80,17 @@ body {
 
 .btn {
   cursor: pointer;
-  font-family: 'Bebas Neue';
-  font-size: 26px;
+  font-family: 'Bebas Neue', sans-serif; /* jouw originele font */
+  font-size: 26px;  /* jouw originele grootte */
   color: #000;
   padding: 10px 30px;
   border: 2px solid #000;
   border-radius: 25px;
   background: linear-gradient(90deg, #fff 0%, #fff 100%);
+  width: max-content;
   max-width: 200px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
