@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141e22;
+  color: white;
+  overflow: hidden; /* voorkomt scrollen */
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2b30;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 5px 0;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+.user-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #00bcd4;
+  cursor: pointer;
+}
+
+.profiel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.Profiel_foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #00bcd4;
+  object-fit: cover;
+}
+
+.profiel p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.btn {
+  cursor: pointer; 
+  border: 2px solid rgb(0, 188, 212); 
+  font-family: "Bebas Neue"; 
+  font-size: 25px; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 30px; 
+  width: 240px;
+  height: 80px;
+  border-radius: 5px; 
+  background: linear-gradient(90deg, rgb(28, 43, 48) 0%, rgb(28, 43, 48) 100%); 
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 188, 212);
+  border-color: rgb(0, 188, 212);
+}
+
+                        
+         
+                        
+                        
+
+                    
+                        
+                        
+
+                    
