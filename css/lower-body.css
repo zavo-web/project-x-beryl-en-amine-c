@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #141e22;
+  background:url(/images/Leg_Press.png);
+  background-size: cover;
   color: white;
 }
 
@@ -41,6 +42,10 @@ body {
 .content {
   padding: 30px 20px;
   text-align: center;
+  display:flex;
+  gap:50px;
+  justify-content: space-around;
+  font-size:20px
 }
 
 .media {
@@ -49,6 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 0 0 20px rgb(147, 147, 147);
 }
 
 .afbeelding {
