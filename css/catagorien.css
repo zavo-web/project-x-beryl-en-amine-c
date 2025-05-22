@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #141e22;
-  height: 100vh;
-  overflow: hidden;
-  font-family: sans-serif;
-}
-
 .catagoriën {
   display: grid;
   grid-template-columns: 50% 50%;
