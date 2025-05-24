@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2b30;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.logo {
+  height: 100px;
+}
+
+.menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: #00bcd4;
+}
+
+.user-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #00bcd4;
+}
