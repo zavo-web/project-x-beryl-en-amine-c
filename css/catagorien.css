@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #141e22;
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
 .catagoriën {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -30,7 +37,7 @@
 }
 
 .catagoriën section:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
 .catagoriën img {
@@ -55,3 +62,4 @@
   height: 100%;
   width: 100%;
 }
+
