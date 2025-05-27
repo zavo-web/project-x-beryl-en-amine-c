@@ -57,7 +57,14 @@ p {
     width: 40px;
   }
 
-
-
 }
 
+.user-icon {
+  height: 36px;
+  width: 36px;
+  margin-right: 4px;
+}
+
+.navbar {
+  padding: 10px 12px;
+}
