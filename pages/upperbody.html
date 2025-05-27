@@ -1,93 +1,52 @@
+
+
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upper Body Pagina</title>
-  <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="../css/sport-display.css">
-  <style>
-    /* Extra CSS voor hamburger menu */
-    .menu-icon {
-      display: none;
-      font-size: 20px;
-      background-color: #00bcd4;
-      color: white;
-      padding: 10px;
-      cursor: pointer;
-      margin: 10px;
-      border-radius: 5px;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Body Pagina</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/sport-display.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="../index.html">
+        <img src="../images/nieuw_logo.png" alt="Logo" class="logo">
+      </a>
+      <nav class="menu">
+        <a href="upperbody.html" class="active">Upper Body</a>
+        <a href="lower-body.html">Lower Body</a>
+        <a href="sixpack.html">Sixpack</a>
+        <a href="cardio.html">Cardio</a>
+      </nav>
+      <a href="user.html">
+        <img src="../images/user.png" alt="User" class="user-icon">
+      </a>
+    </header>
 
-    .mobile-nav {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
 
-    @media only screen and (max-width: 600px) {
-      .menu-icon {
-        display: block;
-      }
+    <main class="content">
+      <section>
+        <h1>Instructie Push Up</h1>
+        <p>Wil je werken aan een sterk bovenlichaam? 💪 Dan zijn push-ups perfect voor jou!</p>
+        <p>Plaats je handen en tenen stevig op de grond en houd je lichaam recht als een plank. Laat jezelf gecontroleerd zakken tot je borst nét de grond raakt, en duw jezelf daarna krachtig omhoog. Voel de kracht in je armen, borst en core!</p>
+      </section>
 
-      .mobile-nav {
-        display: none;
-        flex-direction: column;
-        background-color: #112;
-        padding: 10px;
-        margin: 0 10px;
-        text-align: center;
-      }
 
-      #menu-toggle:checked + .menu-icon + .mobile-nav {
-        display: flex;
-      }
+      <aside class="media">
+        <video class="video" width="400" controls poster="../images/Push-Up.png">
+          <source src="../images/Push-Up.mp4" type="video/mp4">
+          Je browser ondersteunt deze video niet.
+        </video>
+      </aside>
+    </main>
 
-      .user-icon {
-        display: none;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header class="navbar">
-    <a href="../index.html">
-      <img src="../images/nieuw_logo.png" alt="Logo" class="logo">
-    </a>
 
-    <!-- Hamburger menu -->
-    <input type="checkbox" id="menu-toggle" hidden>
-    <label for="menu-toggle" class="menu-icon">☰ Menu</label>
-
-    <nav class="menu mobile-nav">
-      <a href="upperbody.html" class="active">Upper Body</a>
-      <a href="lower-body.html">Lower Body</a>
-      <a href="sixpack.html">Sixpack</a>
-      <a href="cardio.html">Cardio</a>
-    </nav>
-
-    <a href="user.html">
-      <img src="../images/user.png" alt="User" class="user-icon">
-    </a>
-  </header>
-
-  <main class="content">
-    <section>
-      <h1>Instructie Push Up</h1>
-      <p>Wil je werken aan een sterk bovenlichaam? 💪 Dan zijn push-ups perfect voor jou!</p>
-      <p>Plaats je handen en tenen stevig op de grond en houd je lichaam recht als een plank. Laat jezelf gecontroleerd zakken tot je borst nét de grond raakt, en duw jezelf daarna krachtig omhoog. Voel de kracht in je armen, borst en core!</p>
-    </section>
-
-    <aside class="media">
-      <video class="video" width="400" controls poster="../images/Push-Up.png">
-        <source src="../images/Push-Up.mp4" type="video/mp4">
-        Je browser ondersteunt deze video niet.
-      </video>
-    </aside>
-  </main>
-
-  <footer class="footer">
-    &copy; 2025 BodyBoost. Alle rechten voorbehouden.
-  </footer>
-</body>
+    <footer class="footer">
+      &copy; 2025 BodyBoost. Alle rechten voorbehouden.
+    </footer>
+  </body>
 </html>
+
+
