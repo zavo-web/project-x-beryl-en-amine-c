@@ -2,7 +2,6 @@ body {
   background-size: cover;
 }
 
-
 .content {
   padding: 30px 20px;
   text-align: center;
@@ -11,7 +10,6 @@ body {
   justify-content: space-around;
   font-size:20px
 }
-
 
 .media {
   display: flex;
@@ -22,7 +20,6 @@ body {
   box-shadow: 0 0 20px rgb(147, 147, 147);
 }
 
-
 .video {
   width: 600px;
   height: 340px;
@@ -32,12 +29,10 @@ body {
   background-color: #1c2b30;
 }
 
-
 h1 {
   color: #00bcd4;
   margin-bottom: 10px;
 }
-
 
 p {
   color: #cccccc;
