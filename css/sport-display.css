@@ -37,3 +37,23 @@ h1 {
 p {
   color: #cccccc;
 }
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .user-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+  .video {
+    width: 100%;
+  }
+}
