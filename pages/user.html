@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../main.css" />
-    <link rel="stylesheet" href="../css/user.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <title>User</title>
-  </head>
-  <body>
-    <header class="navbar">
-      <a href="../index.html">
-        <img src="../images/nieuw_logo.png" alt="Logo" class="logo" />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User pagina met responsieve navigatie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/user.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="../index.html">
+      <img src="../images/nieuw_logo.png" alt="Logo" class="logo" />
+    </a>
 
-      <nav class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="../pages/upperbody.html">Upper Body</a>
-        <a href="../pages/lower-body.html">Lower Body</a>
-        <a href="../pages/sixpack.html">Sixpack</a>
-        <a href="../pages/cardio.html">Cardio</a>
-      </nav>
-      <a href="user.html">
-        <img src="../images/user.png" alt="User" class="user-icon" />
-      </a>
-    </header>
-    <section class="profiel">
-      <img class="Profiel_foto" src="../images/profiel.png" alt="profiel foto" />
-      <p>@Gebruikersnaam</p>
-    </section>
-    <section class="buttons">
-      <button class="btn" id="customBtn">Doelen</button>
-      <button class="btn" id="customBtn">Favoriete oefening</button>
-      <button class="btn" id="customBtn">Vooruitgang</button>
-    </section>
-  </body>
+    <!-- Navigatie menu, zichtbaar op desktop -->
+    <nav class="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="../pages/upperbody.html">Upper Body</a>
+      <a href="../pages/lower-body.html">Lower Body</a>
+      <a href="../pages/sixpack.html">Sixpack</a>
+      <a href="../pages/cardio.html">Cardio</a>
+    </nav>
+
+    <!-- Checkbox + label als hamburger menu voor mobiel -->
+    <input type="checkbox" id="menuToggle" class="menu-toggle" />
+    <label for="menuToggle" class="popup-btn" aria-label="Open menu">&#9776;</label>
+
+    <a href="user.html">
+      <img src="../images/user.png" alt="User" class="user-icon" />
+    </a>
+  </header>
+
+  <section class="profiel">
+    <img class="Profiel_foto" src="../images/profiel.png" alt="profiel foto" />
+    <p>@Gebruikersnaam</p>
+  </section>
+
+  <section class="buttons">
+    <button class="btn">Doelen</button>
+    <button class="btn">Favoriete oefening</button>
+    <button class="btn">Vooruitgang</button>
+  </section>
+
+  <!-- Popup menu: wordt getoond als checkbox checked is -->
+  <div class="popup">
+    <nav class="popup-menu">
+      <a href="../index.html">Home</a>
+      <a href="../pages/upperbody.html">Upper Body</a>
+      <a href="../pages/lower-body.html">Lower Body</a>
+      <a href="../pages/sixpack.html">Sixpack</a>
+      <a href="../pages/cardio.html">Cardio</a>
+    </nav>
+  </div>
+</body>
 </html>
