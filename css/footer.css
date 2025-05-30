@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px dashed #00bcd4;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #1c2b30;
+}
+
+@media only screen and (width >1px) {
+  .footer {
+    background-color: #1c2b30;  
+    padding: 10px;              
+    font-size: 14px;           
+  }
+}
