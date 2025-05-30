@@ -37,3 +37,34 @@ h1 {
 p {
   color: #cccccc;
 }
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .user-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+}
+
+.user-icon {
+  height: 36px;
+  width: 36px;
+  margin-right: 4px;
+}
+
+.navbar {
+  padding: 10px 12px;
+}
