@@ -1,0 +1,70 @@
+body {
+  background-size: cover;
+}
+
+.content {
+  padding: 30px 20px;
+  text-align: center;
+  display:flex;
+  gap:50px;
+  justify-content: space-around;
+  font-size:20px
+}
+
+.media {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 20px rgb(147, 147, 147);
+}
+
+.video {
+  width: 600px;
+  height: 340px;
+  border-radius: 10px;
+  outline: 2px solid #00ffff;
+  overflow: hidden;
+  background-color: #1c2b30;
+}
+
+h1 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #cccccc;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .user-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+}
+
+.user-icon {
+  height: 36px;
+  width: 36px;
+  margin-right: 4px;
+}
+
+.navbar {
+  padding: 10px 12px;
+}
